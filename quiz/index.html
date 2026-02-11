@@ -12,30 +12,33 @@
     <section>
         <header>
             <nav>
-                <a href="#registro">Registro</a>
-                <a href="#lista">Lista</a>
+                <a href="#exam"></a>
             </nav>
         </header>
         <main>
             <section class="hero">
-                <h1>EXAMEN WEB 1.0</h1>
-                <button id="btnFocus" type="button">Inscribirme</button>
+                <div class="container hero_title">
+                    <h1>EXAMEN WEB 1.0</h1>
+                </div>
             </section>
 
-            <section id="registro" class="card">
-                <form id="formRegistro">
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" minlength="3" required placeholder="Ejemplo: Carlos Rosado"/>
-                    <label for="state">Elija su estado</label>
+            <section class="form">
+                <div class="container form_block">
+                    <form id="formRegistro">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" minlength="3" required placeholder="Ejemplo: Carlos Rosado"/>
+                        <label for="state">Elija su estado</label>
                     <select id="estado" required>
                         <option value="fe">Feliz</option>
                         <option value="se">Serio</option>
                         <option value="ca">Cansado</option>
                     </select>
+
+                    <div class="separator"></div>
                     <button type="submit" class="btn primary">Generar</button>
                     <p id="msg" class="msg" role="status" aria-live="polite"></p>
-
-                </form>
+                    </form>
+                </div>
             </section>
 
             <section id="final_page" class="card">
@@ -44,6 +47,8 @@
                     <button type="submit" class="btn primary">Reiniciar</button>
                 </div>
             </section>
+
+
 
         </main>
         <footer>
