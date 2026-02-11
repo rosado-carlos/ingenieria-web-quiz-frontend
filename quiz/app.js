@@ -1,38 +1,57 @@
 const $ = (selector) => document.querySelector(selector);
 
-document.getElementById("group").textContent = "A";
-document.getElementById("cc").textContent = "1065591475";
+const form = $("#formRegistro");
+const result = $("#result");
+const inputNombre = $("#nombre");
+const selectEstado = $("#state");
 
+function init() {
+  document.getElementById("group").textContent = "A";
+  document.getElementById("cc").textContent = "1065591475";
 
-// Hace que esuche los eventos del botón inscribirme
-btnFocus.addEventListener("click", (e) => {
-  e.preventDefault();
-  // Hace que se haga focus (que se seleccione para empezar a escribir)
-  // Al input con id= nombre
-  $("#nombre")?.focus();
-});
+  form.addEventListener("submit", handleSubmit);
+  inputNombre.addEventListener("input", clearMessage);
+}
 
+function handleSubmit(event) {
+  event.preventDefault();
 
-// 2.
-const formRegistro = $("#formRegistro");
-const btnPrimary = $("#btnPrimary");
-const msg = $("#msg");
-
-formRegistro.addEventListener("submit", (e) => {
-  e.preventDefault();
-  setMessage("");
-
-  if (!formRegistro.checkValidity()) {
-    formRegistro.reportValidity();
-    setMessage("Revisa los campos marcados.", "error");
+  if (!form.checkValidity()) {
+    form.reportValidity();
     return;
   }
 
-  setMessage("Registro enviado ✅", "success");
-  formRegistro.reset();
-});
-function setMessage(text, type = "") {
-  msg.textContent = text;
-  msg.classList.remove("success", "error");
-  if (type) msg.classList.add(type);
+  const name = inputNombre.value.trim();
+  const mood = selectEstado.value;
+
+  const message = buildMessage(name, mood);
+  renderMessage(message);
 }
+
+function buildMessage(name, mood) {
+  if (mood === "fe") {
+    return "Muy bien, " + name;
+  }
+
+  if (mood === "se") {
+    return name + " esta concentrado";
+  }
+
+  if (mood === "ca") {
+    return  name + ", hechate un sueñito.";
+  }
+  return "Algo fallo";
+}
+
+function renderMessage(text) {
+  result.textContent = text;
+  result.classList.remove("error");
+  result.classList.add("success");
+}
+
+function clearMessage() {
+  result.textContent = "";
+  result.classList.remove("success", "error");
+}
+
+init();
