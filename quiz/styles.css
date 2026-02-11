@@ -24,7 +24,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  border-bottom: 3px var(--border) dashed;
+  border-bottom: 3px var(--space) dashed;
   background: rgba(176, 162, 174, 0.626);
 }
 
@@ -55,13 +55,11 @@ section{
     grid-template-columns: 1/0;
 }
 
-.hero,
-.card
-.form_block {
+.hero,.card{
   background: var(--card);
   justify-self: center;
   padding: 22px;
-  border: 2px solid var(--border);
+  border: 2px solid var(--space);
   border-radius: var(--radius);
   grid-column: 1/-1;
 }
