@@ -1,23 +1,9 @@
 # ingenieria-web-quiz-frontend
 Repository for the first exam of Ingenieria Web
-# Proyecto — Ingeniería Web
-
-## Descripción
-
-Esta aplicación corresponde a los ejercicios prácticos desarrollados en JavaScript como parte del taller/examen de la materia **Ingeniería Web**.
-
----
 
 ## ¿Qué hace la app?
 
-La aplicación contiene una serie de ejercicios que permiten:
-
-* Validar datos de entrada
-* Realizar operaciones con arreglos
-* Trabajar con objetos y arrays de objetos
-* Simular escenarios reales como compras, stock y carrito
-
-Cada ejercicio está separado por comentarios y cuenta con pruebas utilizando `console.log()`.
+La app saluda cuando ingresan el estado de animo y el nombre
 
 ---
 
@@ -26,17 +12,12 @@ Cada ejercicio está separado por comentarios y cuenta con pruebas utilizando `c
 1. Clonar el repositorio:
 
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
+   git clone https://github.com/rosado-carlos/ingenieria-web-quiz-frontend.git
    ```
 
-2. Abrir la carpeta del proyecto.
+2. Abrir la carpeta del proyecto y usar **Live Server** desde Visual Studio Code
 
-3. Ejecutar de una de las siguientes formas:
-
-   * Abrir el archivo `index.html` directamente en el navegador
-   * O usar **Live Server** desde Visual Studio Code
-
-4. Abrir la consola del navegador para ver los resultados de las pruebas.
+3. Abrir la consola del navegador para ver los resultados de las pruebas.
 
 ---
 
@@ -45,7 +26,3 @@ Cada ejercicio está separado por comentarios y cuenta con pruebas utilizando `c
 * Nombre: Carlos Alberto Rosado Perez
 * Curso: Ingeniería Web
 * Fecha: 11/02/2026
-
----
-* Ajustarlo al estilo exacto que pide tu profesor
-* O ayudarte a completar uno ya con datos reales
