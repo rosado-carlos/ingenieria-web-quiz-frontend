@@ -40,21 +40,6 @@ Cada ejercicio está separado por comentarios y cuenta con pruebas utilizando `c
 
 ---
 
-## Checklist de requisitos
-
-* [ ] Carpeta con el formato `apellido_nombre_ejercicios`
-* [ ] Archivo `clase6.js` creado
-* [ ] Ejercicios separados por comentarios (`// EJERCICIO X`)
-* [ ] Uso de funciones tradicionales y flecha
-* [ ] Uso de arreglos y objetos
-* [ ] Validaciones de datos (pensamiento crítico)
-* [ ] Pruebas con `console.log()`
-* [ ] Código legible y bien indentado
-* [ ] Push realizado al fork
-* [ ] Pull Request creado al repositorio original
-
----
-
 ## Autor
 
 * Nombre: Carlos Alberto Rosado Perez
